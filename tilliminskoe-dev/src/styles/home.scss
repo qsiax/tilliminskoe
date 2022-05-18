@@ -1,0 +1,285 @@
+.home {
+
+    &__container {
+    }
+
+    &__body {
+        margin-top: 80px;
+        margin-left: 305px;
+        margin-bottom: 60px;
+    }
+
+    &__block {
+        display: flex;
+        &:first-child {
+            border-top: 1px solid $text;
+        }
+    }
+
+    &__heading {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 38px;
+        text-transform: uppercase;
+        max-width: 305px;
+        margin-top: 20px;
+        @include manrope;
+        margin-bottom: 22px;
+    }
+
+    &__block-slider {
+        display: none;
+    }
+
+    &__slider-wrapper {
+    }
+
+    &__slide {
+        &:nth-child(2) {
+            .home__image {
+                background: url(/img/home-image-02.png);
+            }
+        }
+    }
+
+    &__slider-pagination {
+        width: 30px;
+        height: 30px;
+        background: $tertiary-color;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    &__image {
+        width: 894px;
+        height: 304px;
+        @include background;
+        background: url(/img/main-image.png);
+        margin-bottom: 35px;
+        border-radius: 30px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        &:first-child {
+            margin-right: 123px;
+        }
+    }
+
+    &__content-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 590px;
+    }
+
+    &__content-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    &__block-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $text-secondary;
+        margin-right: 45px;
+    }
+
+    &__btn {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $main-color;
+        padding: 18px 53px;
+        border-radius: 30px;
+        background: $primary-color;
+        cursor: pointer;
+    }
+
+    &__avatar {
+        width: 183px;
+        height: 267px;
+        @include background;
+        background: url(/img/director.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+
+    &__role {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $text-secondary;
+    }
+}
+
+@media (max-width: 720px) {
+    .home {
+        position: relative;
+        &__container {
+
+        }
+    
+        &__body {
+            margin-top: 220px;
+            margin-left: 0px;
+            margin-bottom: 120px;
+        }
+    
+        &__block {
+            display: flex;
+            flex-direction: column;
+            &:first-child {
+                border-top: 1px solid $text;
+                border-bottom: 1px solid $text;
+                margin-bottom: 25px;
+            }
+        }
+    
+        &__heading {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: uppercase;
+            max-width: 200px;
+            margin-top: 15px;
+            @include manrope;
+            margin-bottom: 20px;
+        }
+
+        &__block-slider {
+        }
+    
+        &__slider-wrapper {
+    
+        }
+    
+        &__slide {
+            &:nth-child(2) {
+                .home__image {
+                    background: url(/img//home-image-mobile-1.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    
+        &__slider-pagination {
+            width: 30px;
+            height: 30px;
+            background: $tertiary-color;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    
+        &__image {
+            top: 500px;
+            width: 100%;
+            height: 181px;
+            @include background;
+            background: url(/img/home-image-mobile.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-bottom: 35px;
+            border-radius: 0px;
+        }
+    
+        &__content {
+            display: flex;
+            flex-direction: column;
+            &:first-child {
+                margin-right: 123px;
+            }
+            &:nth-child(2) {
+                margin-top: 25px;
+                border-top: 1px solid $text;
+            }
+        }
+    
+        &__content-text {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            min-width: 300px;
+        }
+    
+        &__content-block {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 80px;
+            padding: 0 100%;
+            margin-bottom: 60px;
+        }
+    
+        &__block-text {
+            display: none;
+            position: absolute;
+            left: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $text-secondary;
+            max-width: 160px;
+            margin-right: 0px;
+        }
+    
+        &__btn {
+            position: absolute;
+            right: 55px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 15px;
+            color: $main-color;
+            padding: 16px 30px;
+            border-radius: 30px;
+            background: $primary-color;
+            cursor: pointer;
+        }
+    
+        &__avatar {
+            width: 183px;
+            height: 267px;
+            @include background;
+            background: url(/img/director.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            margin-top: 25px;
+        }
+    
+        &__name {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 15px;
+            max-width: 160px;
+        }
+    
+        &__role {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $text-secondary;
+        }
+    }
+    
+    
+}

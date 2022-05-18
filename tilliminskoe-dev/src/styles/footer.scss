@@ -1,0 +1,405 @@
+.footer {
+    background: $text;
+    margin-top: 60px;
+    * {
+        color: $main-color;
+    }
+    &__container {
+    }
+
+    &__body {
+        margin-top: 50px;
+        border-top: 1px solid $main-color;
+        border-bottom: 1px solid $main-color;
+        margin-bottom: 50px;
+        display: flex;
+    }
+
+    &__block {
+        &:nth-child(2) {
+            display: flex;
+            position: relative;
+        }
+    }
+
+    &__content {
+        margin-right: 203px;
+        &:nth-child(2) {
+            border-top: 1px solid $main-color;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__heading {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 387px;
+        @include manrope;
+        margin: 40px 0px;
+    }
+
+    &__logo {
+        width: 102px;
+        height: 100px;
+        background: url(/img/logo.png);
+        border-radius: 30px;
+        margin-top: 25px;
+        margin-bottom: 57px;
+    }
+
+    &__info-wrapper {
+        margin-bottom: 30px;
+    }
+
+    &__info {
+        display: flex;
+        margin-bottom: 25px;
+        &:nth-child(2) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__info-icon {
+        margin-right: 10px;
+    }
+
+    &__info-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__navigator {
+        margin-top: 50px;
+        &:first-child {
+            margin-right: 200px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            position: relative;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            transition: .3s ease;
+            &:hover {
+                color: $primary-color;
+            }
+            &:hover:before {
+                right: auto;
+                width: 100%;
+                left: 0;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                width: 0%;
+                height: 1px;
+                bottom: -3px;
+                right: 0;
+                background: $primary-color;
+                transition: .3s ease;
+            }
+        }
+    }
+
+    &__copyright {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 14px;
+        text-transform: capitalize;
+        color: $text-secondary;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 139px;
+        width: 63%;
+        input {
+            border: none;
+            background: none;
+            outline: none;
+            border-bottom: 1px solid $main-color;
+            padding-bottom: 5px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            @include manrope;
+            margin-bottom: 26px;
+            &::placeholder {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 19px;
+                color: #E3E2E0;
+                @include manrope;
+            }
+        }
+        textarea {
+            border: none;
+            background: none;
+            outline: none;
+            border-bottom: 1px solid $main-color;
+            padding-bottom: 5px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            @include manrope;
+            margin-bottom: 45px;
+            min-height: 50px;
+            height: 75px;
+            max-height: 100px;
+            resize: vertical;
+            &::placeholder {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 19px;
+                color: #E3E2E0;
+                @include manrope;
+            }
+        }
+        button {
+            background: none;
+            border: none;
+            outline: none;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            @include manrope;
+            color: $primary-color;
+            position: relative;
+            cursor: pointer;
+            width: 135px;
+            margin-left: 95px;
+            transition: .3s ease;
+            &:hover {
+                color: $main-color;
+            }
+            &:hover:before {
+                left: auto;
+                width: 0%;
+                right: 0;
+                background: $main-color;
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                bottom: -5px;
+                left: 0;
+                background: $primary-color;
+                transition: .3s ease;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 730px) {
+    .footer {
+        &__body {
+            margin-top: 50px;
+            border-top: 1px solid $main-color;
+            border-bottom: 1px solid $main-color;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__block {
+            &:nth-child(2) {
+                display: flex;
+                position: relative;
+            }
+        }
+    
+        &__content {
+            margin-right: 0px;
+            &:nth-child(1) {
+                display: flex;
+                justify-content: center;
+            }
+            &:nth-child(2) {
+                border-top: 1px solid $main-color;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row-reverse;
+            }
+        }
+        &__heading {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            max-width: 205px;
+            @include manrope;
+            margin: 20px 0px;
+        }
+        &__info-wrapper {
+            margin-bottom: 30px;
+        }
+    
+        &__info {
+            display: flex;
+            margin-bottom: 15px;
+            &:nth-child(2) {
+                margin-bottom: 0;
+            }
+        }
+    
+        &__info-icon {
+            margin-right: 10px;
+            font-size: 14px;
+        }
+    
+        &__info-text {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        &__logo {
+            width: 64px;
+            height: 63px;
+            background: url(/img/logo.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 30px;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+        &__navigator {
+            margin-top: 0px;
+            &:first-child {
+                margin-right: 43px;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+            a {
+                position: relative;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                transition: .3s ease;
+                &:hover {
+                    color: $primary-color;
+                }
+                &:hover:before {
+                    right: auto;
+                    width: 100%;
+                    left: 0;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 0%;
+                    height: 1px;
+                    bottom: -3px;
+                    right: 0;
+                    background: $primary-color;
+                    transition: .3s ease;
+                }
+            }
+        }
+        &__copyright {
+            display: none;
+        }
+    
+        &__form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 55px;
+            margin-left: 0px;
+            margin-bottom: 80px;
+            width: 100%;
+            input {
+                border: none;
+                background: none;
+                outline: none;
+                border-bottom: 1px solid $main-color;
+                padding-bottom: 5px;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 14px;
+                @include manrope;
+                margin-bottom: 26px;
+                &::placeholder {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #E3E2E0;
+                    @include manrope;
+                }
+            }
+            textarea {
+                border: none;
+                background: none;
+                outline: none;
+                border-bottom: 1px solid $main-color;
+                padding-bottom: 5px;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 14px;
+                @include manrope;
+                margin-bottom: 45px;
+                min-height: 50px;
+                height: 75px;
+                max-height: 100px;
+                resize: vertical;
+                &::placeholder {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #E3E2E0;
+                    @include manrope;
+                }
+            }
+            button {
+                background: none;
+                border: none;
+                outline: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 16px;
+                @include manrope;
+                color: $primary-color;
+                position: relative;
+                cursor: pointer;
+                width: 120px;
+                margin-left: 0px;
+                transition: .3s ease;
+                &:hover {
+                    color: $main-color;
+                }
+                &:hover:before {
+                    left: auto;
+                    width: 0%;
+                    right: 0;
+                    background: $main-color;
+                }
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    bottom: -10px;
+                    left: 0;
+                    background: $primary-color;
+                    transition: .3s ease;
+                }
+            }
+        }
+    }
+}

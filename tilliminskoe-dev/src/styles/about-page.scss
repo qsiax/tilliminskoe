@@ -1,0 +1,247 @@
+.contact {
+
+    &__container {
+    }
+
+    &__body {
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+
+    &__block {
+        display: flex;
+        border-top: 1px solid $text;
+        padding-top: 20px;
+        margin-bottom: 140px;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        text-transform: uppercase;
+        margin-right: 360px;
+        max-width: 250px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: $text-secondary;
+        max-width: 281px;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__image {
+        width: 407px;
+        height: 485px;
+        background: url(/img/contact-image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 203px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        input {
+            border: none;
+            background: none;
+            outline: none;
+            border: 1px solid $text;
+            padding: 23px 0px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            color: $text;
+            @include manrope;
+            padding-left: 20px;
+            &::placeholder {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: $text-secondary;
+                @include manrope;
+            }
+        }
+        textarea {
+            border: none;
+            background: none;
+            outline: none;
+            border: 1px solid $text;
+            padding: 23px 0px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            color: $text;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            @include manrope;
+            &::placeholder {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: $text-secondary;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: $text-secondary;
+                @include manrope;
+            }
+        }
+        button {
+            margin-left: 390px;
+        }
+    }
+
+    &__form-wrapper {
+        display: flex;
+        input {
+            width: 100%;
+            &:first-child {
+                margin-right: 19px;
+            }
+        }
+    }
+
+    &__form-conf {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: $text-secondary;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+    .contact {
+
+        &__container {
+        }
+    
+        &__body {
+            margin-top: 200px;
+            margin-bottom: 100px;
+        }
+    
+        &__block {
+            display: flex;
+            border-top: 1px solid $text;
+            padding-top: 20px;
+            margin-bottom: 60px;
+        }
+    
+        &__heading {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+            margin-right: 50px;
+            max-width: 125px;
+        }
+    
+        &__text {
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 16px;
+            color: $text-secondary;
+            max-width: 300px;
+            display: none;
+        }
+    
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__image {
+            width: 407px;
+            height: 200px;
+            background: url(/img/contact-image.jpg) center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 0px;
+            margin-bottom: 50px;
+        }
+    
+        &__form {
+            display: flex;
+            flex-direction: column;
+            input {
+                border: none;
+                background: none;
+                outline: none;
+                border: 1px solid $text;
+                padding: 16px 0px;
+                margin-bottom: 10px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 25px;
+                color: $text-secondary;
+                @include manrope;
+                padding-left: 20px;
+                &::placeholder {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: $text-secondary;
+                    @include manrope;
+                }
+            }
+            textarea {
+                border: none;
+                background: none;
+                outline: none;
+                border: 1px solid $text;
+                padding: 16px 0px;
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 25px;
+                color: $text-secondary;
+                padding-left: 20px;
+                margin-bottom: 10px;
+                @include manrope;
+                &::placeholder {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: $text-secondary;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: $text-secondary;
+                    @include manrope;
+                }
+            }
+            button {
+                margin-left: 0px;
+            }
+        }
+    
+        &__form-wrapper {
+            display: flex;
+            input {
+                width: 100%;
+                &:first-child {
+                    margin-right: 19px;
+                }
+            }
+        }
+    
+        &__form-conf {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            color: $text-secondary;
+            margin-bottom: 40px;
+        }
+    }
+    
+}

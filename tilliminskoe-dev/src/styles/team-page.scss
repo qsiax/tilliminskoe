@@ -1,0 +1,137 @@
+.team {
+
+    &__container {
+    }
+
+    &__body {
+        margin-left: 102px;
+        margin-right: 102px;
+        margin-top: 120px;
+        margin-bottom: 200px;
+    }
+
+    &__block {
+        border-top: 1px solid $text;
+        margin-bottom: 42px;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        text-transform: uppercase;
+        max-width: 280px;
+        margin-top: 20px;
+    }
+
+    &__content {
+    }
+
+    &__item-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &__item {
+    }
+
+    &__item-image {
+        width: 304px;
+        height: 267px;
+        background: $text;
+        border-radius: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__item-block {
+    }
+
+    &__item-name {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 15px;
+        max-width: 230px;
+    }
+
+    &__item-role {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $text-secondary;
+    }
+}
+
+
+
+
+@media (max-width: 720px) {
+    .team {
+
+        &__container {
+        }
+    
+        &__body {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 215px;
+            margin-bottom: 200px;
+        }
+    
+        &__block {
+            border-top: 1px solid $text;
+            margin-bottom: 30px;
+        }
+    
+        &__heading {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 26px;
+            text-transform: uppercase;
+            max-width: 160px;
+            margin-top: 15px;
+        }
+    
+        &__content {
+        }
+    
+        &__item-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-bottom: 60px;
+        }
+    
+        &__item {
+            margin-bottom: 60px;
+        }
+    
+        &__item-image {
+            width: 304px;
+            height: 267px;
+            background: $text;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+    
+        &__item-block {
+        }
+    
+        &__item-name {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 10px;
+            max-width: 200px;
+        }
+    
+        &__item-role {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: $text-secondary;
+        }
+    }
+    
+}

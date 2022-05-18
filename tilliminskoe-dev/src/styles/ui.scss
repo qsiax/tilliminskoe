@@ -1,0 +1,49 @@
+$main-color: #FFFFFF;
+$primary-color: #F4B63E;
+$secondary-color: #0B3F2E;
+$tertiary-color: #BC732B;
+$text: #231F20;
+$text-secondary: #B3B3B3;;
+$error: #ED0A34;
+$succes: #0284C7;
+$transition: all .5s ease;
+
+@mixin background {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin manrope {
+    font-family: 'Manrope', sans-serif;
+}
+
+.btn {
+    padding: 18px 36.5px;
+    background: $primary-color;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $main-color;
+    display: inline-block;
+    cursor: pointer;
+    transition: .3s ease;
+    border: 2px solid $primary-color;
+    &:hover {
+        background: none;
+        border: 2px solid $primary-color;
+        color: $primary-color;
+    }
+}
+
+.fz14px {
+    font-size: 15px !important;
+}
+
+.mb35px {
+    margin-bottom: 35px !important;
+}
+
+.mt100px {
+    margin-top: 100px !important;
+}
